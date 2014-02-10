@@ -15,11 +15,13 @@ LDFLAGS := $(shell root-config --glibs) $(STDLIBDIR)
 
 CPPFLAGS += -g
 
-TARGET = CombPrecision
+#TARGET = CombPrecision
+TARGET = ReadConstants
 
 #SRC = main.cc PhosphorCorrectorFunctor.cc
 #SRC = CreateStandardPlots.cc
-SRC = CombinedIC_PrecisionPlot.cc
+#SRC = CombinedIC_PrecisionPlot.cc
+SRC = IC_Constants_Comparison.cc
 
 OBJ = $(SRC:.cc=.o)
 
